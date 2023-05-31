@@ -30,10 +30,10 @@ Do not **move or rename any files** in this project. The website's source files 
   * [X] `mouseover`
   * [x] `keydown`
   * [ ] `wheel`
-  * [ ] `load`
+  * [x] `load`
   * [ ] `focus`
-  * [ ] `resize`
-  * [ ] `scroll`
+  * [x] `resize`
+  * [x] `scroll`
   * [ ] `select`
   * [x] `dblclick`
   * [ ] `drag / drop`

@@ -5,6 +5,7 @@ homeBtn.addEventListener("mouseover", (event) => {
   event.target.style.color = "red";
 });
 
+// KEYDOWN
 const keyPressed = document.querySelector("h2");
 
 function changeColor(event) {
@@ -15,15 +16,26 @@ function changeColor(event) {
 
 document.addEventListener("keydown", changeColor);
 
-// const mainImg = document.querySelector(".intro img");
-// console.log(mainImg);
+// RESIZE
+window.addEventListener("resize", (event) => {
+  document.body.textContent = "GONE!";
+});
 
-// mainImg.addEventListener("focus", (event) => {
-//   event.
-// });
-
+// DOUBLE CLICK
 const buttons = document.querySelectorAll(".btn");
 
 buttons[0].addEventListener("dblclick", (event) => {
   event.target.textContent = "Ouch!";
+});
+
+// SCROLL
+const image = document.querySelector("img");
+
+window.addEventListener("scroll", (event) => {
+  image.style.visibility = "hidden";
+});
+
+// LOAD 
+window.addEventListener("load", (event) => {
+  document.body.style.backgroundColor = "tan";
 });
